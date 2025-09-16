@@ -5,4 +5,11 @@
     --icon-size-small: 8px;
     --icon-size-medium: 16px;
     --icon-size-large: 16px;
+
+    --font-color-darkest: black;
+    --font-color-dark: rgb(134, 134, 134);
+    --font-color-lightest: white;
+
+    --text-shadow: 1px 1px 2px black;
+    --box-shadow: 3px 2px 5px 1px rgba(0,0,0,0.15);
 }

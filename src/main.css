@@ -11,15 +11,91 @@ html
     font-size: var(--font-default-size);
 }
 
-h1, h2
+img
+{
+    overflow: hidden;
+}
+
+h1, h2, h3
 {
     font-family: "Playfair Display", serif;
     font-weight: 300;
+    color: var(--font-color-darkest);
 }
 
-.about-image
+div, p
 {
+    color: var(--font-color-dark)
+}
 
+body
+{
+    background-image: url("../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+
+.main-content
+{
+    margin: auto;
+    max-width: 80vw;
+    padding-top: 24px;
+}
+
+.about-me-section
+{
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic
+{
+    min-height: 300px;
+    min-width: 280px;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    background-image: url("../img/about-img-full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-pic > h1
+{
+    position: absolute;
+    bottom: 6px;
+    right: 50%;
+    transform: translateX(50%);
+    min-width: max-content;
+    color: var(--font-color-lightest);
+    text-shadow: var(--text-shadow);
+    font-weight: 500;
+}
+
+.about-img
+{
+    max-width: 220px;
+    display: block;
+}
+
+.about-info
+{
+    margin: 48px 0px;
+    padding: 24px 12px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+.about-info > h2
+{
+    margin-bottom: 24px;
+}
+
+.about-info > .social-media 
+{
+    margin-top: 24px;
+    gap: 8px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .social-media-icon
@@ -30,4 +106,14 @@ h1, h2
 .icon-small
 {
     width: var(--icon-size-medium);
+}
+
+.contact-me-content
+{
+    display: flex;
+}
+
+.contact-me-img
+{
+    flex-shrink: 1;
 }
