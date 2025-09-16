@@ -1,4 +1,5 @@
 import "./main.css"
+import "./project.css"
 import "./variables.css"
 
 const projects = [];

@@ -1,0 +1,14 @@
+.project-panel
+{
+    height: 300px;
+    width: 250px;
+    display: grid;
+    grid-template-rows: 200px min-content;
+    grid-auto-flow: row;
+    box-shadow: var(--box-shadow);
+}
+
+.project-image
+{
+    background-color: darksalmon;
+}
