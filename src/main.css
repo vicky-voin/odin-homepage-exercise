@@ -7,6 +7,27 @@
 
 html
 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--font-default-size);
+}
+
+h1, h2
+{
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+}
+
+.about-image
+{
+
+}
+
+.social-media-icon
+{
+    width: var(--icon-size-large);
+}
+
+.icon-small
+{
+    width: var(--icon-size-medium);
 }
