@@ -1,5 +1,6 @@
 .project-panel
 {
+    justify-self: center;
     height: 300px;
     width: 250px;
     display: grid;

@@ -112,6 +112,8 @@ body
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     flex-wrap: wrap;
     gap: 24px;
+    place-content: center;
+    margin-bottom: 48px;
 }
 
 .social-media-icon
@@ -124,12 +126,60 @@ body
     width: var(--icon-size-medium);
 }
 
-.contact-me-content
+.contact-me-section
 {
+    background-color: var(--background-color);
+    padding: 24px 36px;
     display: flex;
+}
+
+.contact-me-section span,
+.contact-me-section p,
+.contact-me-section h2
+{
+    color: var(--font-color-lightest);
+}
+
+.contact-me-section span,
+.contact-me-section h2
+{
+    margin-bottom: 8px;
+}
+
+.contact-me-section span,
+.contact-me-section p
+{
+    font-size: 0.8rem;
+}
+
+.contact-me-section .icon-small
+{
+    transform: translateY(30%);
+    margin-right: 8px;
+    filter: invert(82%) sepia(100%) saturate(0%) hue-rotate(356deg) brightness(106%) contrast(101%);;
+}
+
+.contact-info
+{
+    padding: 8px;
 }
 
 .contact-me-img
 {
-    flex-shrink: 1;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.social-media
+{
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+}
+
+footer
+{
+    padding: 4px;
+    background-color: rgb(238, 238, 238);
 }
