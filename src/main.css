@@ -38,15 +38,18 @@ body
 .main-content
 {
     margin: auto;
-    max-width: 80vw;
-    padding-top: 24px;
+}
+
+section
+{
+    padding: 24px 24px 0px 24px;
 }
 
 .about-me-section
 {
     display: flex;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 .profile-pic
@@ -129,7 +132,7 @@ body
 .contact-me-section
 {
     background-color: var(--background-color);
-    padding: 24px 36px;
+    padding-bottom: 36px;
     display: flex;
 }
 
@@ -167,6 +170,9 @@ body
 .contact-me-img
 {
     width: 100%;
+        color: var(--font-color-lightest);
+        text-shadow: var(--text-shadow);
+        font-weight: 500;
     max-height: 300px;
     object-fit: cover;
 }
@@ -182,4 +188,62 @@ footer
 {
     padding: 4px;
     background-color: rgb(238, 238, 238);
+}
+
+@media (min-width: 1200px) {
+    .main-content
+    {
+        max-width: 50vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .main-content
+    {
+        max-width: 70vw;
+    }
+
+    .about-me-section
+    {
+        display: block;
+    }
+
+    .about-info > h2
+    {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .profile-pic
+    {
+        float: left;
+        min-height: 250px;
+        min-width: 250px;
+        margin-right: 24px;
+        margin-bottom: 12px;
+        margin-left: -24px;
+    }
+
+     .profile-pic > h1
+    {
+        position: absolute;
+        top: 6px;
+        right: -20%;
+    }
+
+    .projects-content
+    {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .contact-me-img
+    {
+        width: 30%;
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 767px) {
+    
 }

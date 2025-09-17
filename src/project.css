@@ -1,8 +1,6 @@
 .project-panel
 {
     justify-self: center;
-    height: 300px;
-    width: 250px;
     display: grid;
     grid-template-rows: 200px min-content;
     grid-auto-flow: row;
@@ -39,4 +37,5 @@
     grid-row: 3;
     grid-column: span 2;
     padding: 8px 16px;
+    padding-bottom: 48px;
 }
