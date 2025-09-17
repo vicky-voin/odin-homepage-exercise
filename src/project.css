@@ -11,4 +11,31 @@
 .project-image
 {
     background-color: darksalmon;
+    grid-column: span 2;
+}
+
+.project-name
+{
+    grid-row: 2;
+    grid-column: 1;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.project-links
+{
+    grid-row: 2;
+    grid-column: 2;
+    padding-top: 8px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.project-description
+{
+    grid-row: 3;
+    grid-column: span 2;
+    padding: 8px 16px;
 }
